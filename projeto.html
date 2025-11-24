@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thinking — Palavras de Origem Africana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fffdfa;
+      --pink:#ffd6e0;
+      --yellow:#fff1b8;
+      --green:#dff7e1;
+      --card:#ffffff;
+      --muted:#5b5b5b;
+      --accent:#d16ca6;
+      --radius:16px;
+    }
+
+    /* Tema escuro */
+    .dark{
+      --bg:#1e1e1e;
+      --card:#2a2a2a;
+      --muted:#c7c7c7;
+      --accent:#ff8ad4;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Quicksand',system-ui,Arial,Helvetica,sans-serif;
+      background:var(--bg);
+      color:#222;
+      padding:32px;
+    }
+    body.dark{color:#f0f0f0}
+
+    .container{max-width:1100px;margin:0 auto}
+    header{display:flex;align-items:center;gap:18px;margin-bottom:24px}
+
+    /* Logo nova: rosa dos ventos tradicional */
+    .logo{
+      width:84px;height:84px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    }
+    .logo svg{width:84px;height:84px}
+
+    h1{font-size:32px;margin:0}
+    .meta{margin-left:auto;text-align:right}
+    .meta p{margin:0;color:var(--muted)}
+
+    .intro{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-bottom:20px}
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:0 6px 18px rgba(10,10,20,0.04)}
+
+    .section-title{display:flex;align-items:center;gap:12px;margin:12px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+    .term{background:linear-gradient(180deg,rgba(255,255,255,0.6),var(--card));padding:12px;border-radius:12px;border:1px solid rgba(0,0,0,0.04)}
+    .term h3{margin:0 0 8px 0;font-size:18px;color:var(--accent)}
+    .term p{margin:0;color:var(--muted);font-size:14px;line-height:1.4}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
+
+    /* Botão tema */
+    .theme-toggle{
+      padding:8px 14px;
+      border:1px solid rgba(0,0,0,0.1);
+      background:var(--card);
+      border-radius:10px;
+      cursor:pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo" aria-hidden="true">
+        <!-- Rosa dos Ventos Tradicional -->
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" stroke="#555" stroke-width="2" fill="none"/>
+          <polygon points="50,5 58,42 95,50 58,58 50,95 42,58 5,50 42,42" fill="#d16ca6"/>
+          <circle cx="50" cy="50" r="6" fill="#fff" stroke="#333" stroke-width="1"/>
+        </svg>
+      </div>
+
+      <div>
+        <h1>thinking</h1>
+        <div style="color:var(--muted);font-size:14px">Palavras de origem africana — Apresentação escolar</div>
+      </div>
+
+      <div class="meta card">
+        <p><strong></strong></p>
+        <p>Disciplina: História</p>
+      </div>
+
+      <!-- Botão de tema -->
+      <button class="theme-toggle" onclick="toggleTheme()">Alternar tema</button>
+    </header>
+
+
+
+  </div>
+
+  <script>
+    function toggleTheme(){
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
+</html>
+
+  </style>
+</head>
+<body>
+
+
+    <section class="intro">
+      <div class="card">
+        <h2 style="margin-top:0">Sobre este site</h2>
+        <p style="color:var(--muted);line-height:1.5">Este material reúne palavras e termos de origem africana que entraram no português do Brasil. Cada termo tem uma pequena explicação pensada para uma apresentação escolar.</p>
+
+        
+        <div style="margin-top:12px;display:flex;gap:8px;align-items:center">
+          <button class="btn" onclick="window.print()">Imprimir / Salvar PDF</button>
+          <button class="btn" onclick="document.getElementById('grid').scrollIntoView({behavior:'smooth'})">Ir para termos</button>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- Conteúdo: termos agrupados -->
+    <main>
+      <div class="card">
+        <div class="section-title"><h2 style="margin:0">Cultura, religiões e identidade</h2></div>
+        <div id="grid" class="grid">
+          <div class="term"><h3>Exu</h3><p>Divindade mensageira dos orixás, ligada a caminhos, comunicação e transformação.</p></div>
+          <div class="term"><h3>Ibeji</h3><p>Orixá que simboliza as crianças, alegria e equilíbrio entre opostos.</p></div>
+          <div class="term"><h3>Iemanjá</h3><p>Orixá das águas do mar; é vista como mãe protetora e ligada à maternidade.</p></div>
+          <div class="term"><h3>Ogum</h3><p>Orixá do ferro, do trabalho e da proteção; representa força e coragem.</p></div>
+          <div class="term"><h3>Orixá</h3><p>Forças divinas das religiões de matriz africana, cada uma associada a elementos naturais.</p></div>
+          <div class="term"><h3>Saravá</h3><p>Saudação usada em cultos afro-brasileiros que expressa respeito e bênçãos.</p></div>
+          <div class="term"><h3>Umbanda</h3><p>Religião brasileira que mistura tradições africanas, indígenas e cristãs, centrada na caridade.</p></div>
+          <div class="term"><h3>Zumbi</h3><p>Líder do Quilombo dos Palmares e símbolo histórico da resistência negra no Brasil.</p></div>
+          <div class="term"><h3>Macumba</h3><p>Termo popular que, hoje, é usado de forma genérica para falar de práticas religiosas afro-brasileiras; historicamente tem usos diferentes.</p></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <div class="section-title"><h2 style="margin:0">Cotidiano e família</h2></div>
+        <div class="grid">
+          <div class="term"><h3>Abadá</h3><p>Camisa larga usada em festas (principalmente Carnaval); inspiração em trajes africanos.</p></div>
+          <div class="term"><h3>Bagunça</h3><p>Confusão; termo de uso cotidiano com origem africana.</p></div>
+          <div class="term"><h3>Cafuné</h3><p>Carinho feito passando os dedos no cabelo de alguém — gesto de afeto.</p></div>
+          <div class="term"><h3>Camundongo</h3><p>Pequeno roedor; palavra com influência de línguas bantas.</p></div>
+          <div class="term"><h3>Caçula</h3><p>O filho mais novo da família.</p></div>
+          <div class="term"><h3>Candango</h3><p>Nome dado aos trabalhadores que construíram Brasília; hoje lembra quem veio de longe para trabalhar.</p></div>
+          <div class="term"><h3>Choro</h3><p>Gênero musical brasileiro que destaca virtuosismo e improviso.</p></div>
+          <div class="term"><h3>Coxinha</h3><p>Salgado popular no Brasil; difundido na cultura culinária urbana.</p></div>
+          <div class="term"><h3>Dengo</h3><p>Termo carinhoso para designar um jeito meigo, manhoso ou afetuoso.</p></div>
+          <div class="term"><h3>Encrenca</h3><p>Problema, confusão; palavra usada no cotidiano.</p></div>
+          <div class="term"><h3>Fubá</h3><p>Farinha fina de milho muito utilizada na cozinha brasileira.</p></div>
+          <div class="term"><h3>Gangorra</h3><p>Brinquedo infantil com movimento de subir e descer; termo com raízes africanas.</p></div>
+          <div class="term"><h3>Maxixe</h3><p>É um legume e também uma dança brasileira de raízes africanas.</p></div>
+          <div class="term"><h3>Moleque</h3><p>Originalmente “criança” em línguas africanas; hoje significa menino ou jovem travesso.</p></div>
+          <div class="term"><h3>Mucama</h3><p>Termo histórico para escravizada doméstica; sendo evitado na atualidade por ser um termo ligado ao racismo</p></div>
+          <div class="term"><h3>Muamba</h3><p>Mercadorias diversas ou objetos levados em viagens; também usado para indicar achados populares.</p></div>
+          <div class="term"><h3>Xilique</h3><p>Explosão emocional, crise de birra ou nervosismo.</p></div>
+          <div class="term"><h3>Xingamento</h3><p>Ofensa verbal; palavra de uso comum para expressar irritação.</p></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <div class="section-title"><h2 style="margin:0">Comunidades, história e resistência</h2></div>
+        <div class="grid">
+          <div class="term"><h3>Quilombo</h3><p>Comunidade formada por pessoas escravizadas fugidas; importante símbolo de resistência.</p></div>
+          <div class="term"><h3>Mocambo</h3><p>Assentamento de pessoas negras em fuga durante o período escravocrata, precursor dos quilombos.</p></div>
+          <div class="term"><h3>Senzala</h3><p>Edificação onde viviam as pessoas escravizadas nas fazendas.</p></div>
+          <div class="term"><h3>Soba</h3><p>Chefe ou autoridade tradicional em várias comunidades africanas.</p></div>
+          <div class="term"><h3>Quitanda</h3><p>Mercado pequeno de frutas e verduras; palavra ligada ao comércio popular.</p></div>
+          <div class="term"><h3>Tanga</h3><p>Peça curta de vestuário; termo com origem africana.</p></div>
+          <div class="term"><h3>Zambi</h3><p>Nome que, em algumas culturas africanas, refere-se a uma entidade ou ser divino.</p></div>
+          <div class="term"><h3>Zambeta</h3><p>Termo que descreve alguém mancando ou com passos desengonçados.</p></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <div class="section-title"><h2 style="margin:0">Música e instrumentos</h2></div>
+        <div class="grid">
+          <div class="term"><h3>Berimbau</h3><p>Arco musical que marca o ritmo na capoeira; símbolo sonoro da cultura afro-brasileira.</p></div>
+          <div class="term"><h3>Banjo</h3><p>Instrumento de cordas adotado em várias tradições musicais, incluindo o samba.</p></div>
+          <div class="term"><h3>Urucungo</h3><p>Antepassado do berimbau, instrumento africano de corda única.</p></div>
+          <div class="term"><h3>Cuíca</h3><p>Instrumento de percussão que produz som agudo e "choroso" muito usado no samba.</p></div>
+          <div class="term"><h3>Samba</h3><p>Gênero musical e dança de origem africana, central na cultura brasileira.</p></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <div class="section-title"><h2 style="margin:0">Culinária afro-brasileira</h2></div>
+        <div class="grid">
+          <div class="term"><h3>Dendê</h3><p>Óleo de palma usado em pratos tradicionais da Bahia; ingrediente marcante e aromático.</p></div>
+          <div class="term"><h3>Acarajé</h3><p>Bolinho de feijão-fradinho frito no dendê, muito popular na Bahia e comida de origem religiosa/sagrada.</p></div>
+          <div class="term"><h3>Abará</h3><p>Massa de feijão-fradinho cozida em folha de bananeira; prato típico baiano.</p></div>
+          <div class="term"><h3>Bobó</h3><p>Prato cremoso de mandioca com camarão e dendê.</p></div>
+          <div class="term"><h3>Vatapá</h3><p>Creme de pão, camarão, castanhas, leite de coco e dendê, prato marcante da culinária afro-brasileira.</p></div>
+          <div class="term"><h3>Moqueca</h3><p>Ensopado de peixe ou frutos do mar, muito tradicional na Bahia e Espírito Santo.</p></div>
+          <div class="term"><h3>Quibebe (Quimbebé)</h3><p>Puré de abóbora típico da cozinha brasileira com influência africana.</p></div>
+          <div class="term"><h3>Efó</h3><p>Prato de folhas refogadas, muito presente na culinária de origem africana.</p></div>
+          <div class="term"><h3>Fubá</h3><p>Farinha de milho que aparece em doces e salgados tradicionais.</p></div>
+          <div class="term"><h3>Quitute</h3><p>Pequeno doce ou salgado típico da culinária popular.</p></div>
+          <div class="term"><h3>Mungunzá</h3><p>Preparação de milho (doce ou salgada) consumida em festas e rituais.</p></div>
+          <div class="term"><h3>Jabá</h3><p>Carne seca (charque) comum na cozinha popular brasileira.</p></div>
+          <div class="term"><h3>Cachimbo</h3><p>Objeto tradicional para fumar, com versões históricas trazidas por povos africanos.</p></div>
+          <div class="term"><h3>Quitanda</h3><p>Pequena loja ou banca de alimentos; ponto de comércio popular.</p></div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div style="font-size:13px;color:var(--muted)">Feito por <strong>Cícera</strong> — matéria: História. Projeto para apresentação escolar.</div>
+      <div style="margin-top:6px;color:var(--muted)"></div>
+    </footer>
+  </div>
+
+</body>
+</html>
